@@ -6,6 +6,9 @@
     <title>Home page</title>
 </head>
 <style>
+    body {
+        background-color:aqua;
+    }
 .header {
     font-size:30px;
     font-weight:bold;
@@ -18,12 +21,46 @@
 }
 .main-line {
     color:#00b300;
+    margin:5px 100px;
+}
+.container {
+    display:flex;
+    flex-direction:row;
+    width:200px;
+}
+.btn-1 {
+    border-radius:30px;
+    
+    width:150px;
     margin:10px 100px;
+    background-color: #ffc61a;
+    border:none;
+    font-size:18px;
+    height:40px;
+    
+}
+.course-logo {
+    height:30px;
+    
+}
+.btn-2 {
+    border-radius:30px;
+    color:white;
+    width:150px;
+    margin:-100px -80px;
+    background-color: black;
+    border:none;
+    font-size:18px;
+    height:40px;
 }
 </style>
 <body>
     <p class="header">Quality courses at affordable<br /> pricing, trusted by 2000+<br /> students.</p>
     <p class="line">We help you to learn the latest technologies and tools to kickstart<br /> your career in tech.</p>
     <h1 class="main-line">Learn,Practice,Master and Acheive.</h1>
+    
+    <button class="btn-1"><img src="launch.png" class="course-logo" />Courses</button>
+    <button class="btn-2"><img src="lock.png" class="course-logo" />Login</button>
+    
 </body>
 </html>
