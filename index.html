@@ -6,13 +6,17 @@
     <title>Home page</title>
 </head>
 <style>
-    body {
-        background-color:aqua;
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+  body {
+        background-color:#f2f2f2;
+        margin:0;
+        padding:0;
     }
 .header {
     font-size:30px;
     font-weight:bold;
     margin:20px 100px;
+    
 }
 .line {
     margin:-5px 100px;
@@ -89,28 +93,157 @@
 }
 .c1-logo {
     height:50px;
+    margin:5px;
 }
 .container-1 {
     display:flex;
     flex-direction:row;
-    background-color:#00b300;
+    background-color:;
     height:850px;
-
+    background-color:#f2f2f2;
     padding:10px 80px;
     flex-wrap:wrap;
+    margin:10px 5px;
 
 }
 .c1-card {
     height:190px;
     width:300px;
-    background-color:tomato;
+    background-color:white;
     padding: 2px 10px;
     border-radius:10px;
     margin:0px 10px 0px 10px;
     
 }
+.container-2 {
+    display:flex;
+    flex-direction:row;
+    background-color:#f2f2f2;
+    height:600px;
+
+    padding:10px 80px;
+    flex-wrap:wrap;
+}
+.c2-card {
+    height:500px;
+    width:320px;
+    background-color:white;
+    
+    border-radius:10px;
+    margin:0px 10px 0px 10px;
+}
+.c2-img {
+    height:30%;
+    width:100%;
+    border-radius:5px;
+}
+.c2-header {
+    margin:5px 10px;
+    text-align:center;
+}
+.c2-description {
+    text-align:center;
+}
+.c2-price {
+    text-align:center;
+    color:#0099ff;
+}
+.c2-btn {
+    background-color:black;
+    color:white;
+    border:none;
+    border-radius:20px;
+    height:40px;
+    width:100px;
+    margin-left:100px;
+}
+.c2-heading {
+    text-align:center;
+    color:#808080; 
+}
+.container-3 {
+    background-color:#00001a;;
+    padding:10px;
+    
+    
+    color:white;
+    display:flex;
+    flex-direction: row;
+}
+.c3-description {
+    font-size:20px;
+}
+.c3-footer {
+    width:300px;
+    margin:10px;
+}
+.c3-logo {
+    height:30px;
+}
+.navbar {
+    height:70px;
+    background-color:#00001a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    display:flex;
+    padding:5 px 20px ;
+    color:white;
+    align-items:center;
+}
+.navbar-logo {
+    height:40px;
+    margin:0px 0px 0px 10px;
+}
+.navbar-brand {
+    margin-left:20px;
+}
+.nav-menu-container {
+   margin-left:auto;
+}
+.nav-menu {
+    color:white;
+    text-decoration:none;
+    font-size:20px;
+    margin:0px 15px;
+}
+.c1-heading {
+    text-align:center;
+    color:#808080;
+}
+.c1-sheading {
+    background-color:#ffe066;
+    border:1px yellow;
+    color:black;
+
+}
+.c2-sheading {
+    background-color:#ffad99;
+    border:1px tomato solid;
+    color:black;
+}
+.heading {
+    font-weight:bold;
+    margin:0px 5px;
+    font-size:18px;
+}
+
 </style>
 <body>
+    <div class="navbar">
+        <img src="https://www.roadtocode.org/_next/static/media/logo.c23aa56e.png" class="navbar-logo">
+        <h1 class="navbar-brand">Road to Code</h1>
+    <div class="nav-menu-container">
+        <a href="" class="nav-menu">Home</a>
+        <a href="" class="nav-menu">Colleges</a>
+        <a href="" class="nav-menu">Spaceship</a>
+        <a href="" class="nav-menu">Internship</a>
+        <a href="" class="nav-menu">Services</a>
+        <a href="" class="nav-menu">Harshita Jethani</a>
+        <a href="" class="nav-menu">Logout</a>
+
+    </div>
+    </div>
     <p class="header">Quality courses at affordable<br /> pricing, trusted by 2000+<br /> students.</p>
     <p class="line">We help you to learn the latest technologies and tools to kickstart<br /> your career in tech.</p>
     <h1 class="main-line">Learn,Practice,Master and Acheive.</h1>
@@ -135,7 +268,9 @@
         <h1 class="header-2">30+</h1>
         <p class="description">Completed Batches</p></div>
     </div>
+    <h1 class="c1-heading">Why To Choose<span class="c1-sheading"> Road To Code</span>?</h1>
     <div class="container-1">
+        
         <div class="c1-card">
             <p class="heading"><img src="real-wallet.png" class="c1-logo"/>Affordable Pricing</p>
             <p class="c1-description">Our course price ranges from ₹499 to ₹1999. Which is less than 1% of the cost of a college degree in India, and we provide more practical and industry-oriented knowledge.</p>
@@ -181,6 +316,74 @@
             <p class="c1-description">Unlock opportunities by learning correct way of using Peerlist and LinkedIn for hunting jobs and internships.</p>
         </div>
      </div>
-    
+     <h1 class="c2-heading">Our Most <span class="c2-sheading">Popular Courses</span></h1>
+    <div class="container-2">
+        <div class="c2-card">
+            <img src="download.jpg" class="c2-img" />
+            <h2 class="c2-header">Internship Cohort Program 12.0</h2>
+            <p class="c2-description">Learn Fullstack Development and Become Internship Ready in Just 8 Months </p>
+            <h3 class="c2-header1">Starting from 1st April 2025</h3>
+            <hr />
+        <h2 class="c2-price">₹ 2999/-</h2>
+        <hr />
+        <button class="c2-btn">Know more</button>
+        </div>
+       
+       
+        <div class="c2-card">
+            <img src="https://cdn.roadtocode.org/course-headers/aws.jpg?start=23rddecember" class="c2-img" />
+            <h2 class="c2-header">AWS and DevOps For Beginners</h2>
+            <p class="c2-description">Learn AWS and DevOps from Scratch and Kickstart your career in and DevOps </p>
+            <h3 class="c2-header1">Starting from 2nd May 2025</h3>
+            <hr />
+        <h2 class="c2-price">₹ 2999/-</h2>
+        <hr />
+        <button class="c2-btn">Know more</button>
+        </div>
+        <div class="c2-card">
+            <img src="https://cdn.roadtocode.org/course-headers/mad.jpg?start=1staugust" class="c2-img" />
+            <h2 class="c2-header">Modern Android Development 2.0</h2>
+            <p class="c2-description">Designed for our students of ICP course. Add extra skills to stay ahead in the competition. </p>
+            <h3 class="c2-header1">Starting from 2nd June 2025</h3>
+            <hr />
+        <h2 class="c2-price">₹ 2999/-</h2>
+        <hr />
+        <button class="c2-btn">Know more</button>
+        </div>
+    </div>
+
+    <div class="container-3">
+        <div class="c3-footer">
+        <h1 class="c3-header"><img src="https://www.roadtocode.org/_next/static/media/logo.c23aa56e.png" class="c3-logo" />Road to Code</h1>
+        <p class="c3-description">Affordable Computer Science Education For Everyone. We Provide Quality courses which are trusted by 2000+ students.</p>
+        </div>
+
+        <div class="c3-footer">
+            <h1 class="c3-header">Quick Links</h1>
+            <p class="c3-description">
+                Courses<br />
+                Colleges<br />
+                Terms Of Service<br />
+                Refund Policy</p>
+            </div>
+            
+                <div class="c3-footer">
+                <h1 class="c3-header">Learn</h1>
+                <p class="c3-description">Fullstack Development<br />
+                    C Programming<br />
+                    C++ Programming<br />
+                    Python Programming<br />
+                    Data Structures</p>
+                </div>
+                
+                    <div class="c3-footer">
+                    <h1 class="c3-header">Contact Us</h1>
+                    <p class="c3-description">
+                        home-logo404, Laxmi Heights, Above Lotus Multi-speciality Hospital Shewalewadi(Hadapsar), Pune - 412307<br />
+                        
+                        +91-7821011979<br />
+                        suraj@roadtocode.org</p>
+                    </div>
+    </div>
 </body>
 </html>
